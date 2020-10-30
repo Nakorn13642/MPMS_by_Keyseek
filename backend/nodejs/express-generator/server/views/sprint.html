@@ -1,0 +1,380 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MATERIALS PLANNING & MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+<style>
+    ::selection {
+    margin:40px;
+    background: #C68FD3;
+    color:#7F3F90;
+    } 
+
+    .achv:hover{
+    background-color: #C68FD3;
+    color:White;
+    }
+    .achv:focus,
+    .achv:active,
+    .achv.active{
+    background-color: #C68FD3;
+    color:white;
+    }
+
+    .achv1:hover{
+    background-color: #C68FD3;
+    border-radius: 10px;  
+    color:White;
+    }
+    .achv1:focus,
+    .achv1:active,
+    .achv1.active{
+    background-color: #C68FD3;
+    border-radius: 10px;  
+    color:white;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #ffffff;">
+        <a class="navbar-brand" href="#" style="color: #7F3F90; " ><img src="/picture/pea.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          MATERIALS PLANNING & MANAGEMENT SYSTEM
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarNavAltMarkup" >
+          <div class="navbar-nav  col-md-9" >
+            <a class="nav-link achv active col-md-2 text-center" href="#" style="color: #7F3F90; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border: 1px solid #7F3F90;">โครงการ</a>
+            <a class="nav-link achv col-md-2 text-center" href="#" style="color: #7F3F90;border-radius: 0px; border: 1px solid #7F3F90;">คลัง</a>
+            <a class="nav-link achv col-md-2 text-center" href="#" style="color: #7F3F90;border-radius: 0px; border: 1px solid #7F3F90;">เขต</a>
+            <a class="nav-link disabled achv col-md-2 text-center" href="#" tabindex="-1" aria-disabled="true" style="color: #7F3F90; border-top-right-radius: 10px;border-bottom-right-radius: 10px; border: 1px solid #7F3F90;">Menu4</a>
+          </div>
+        </div>
+        
+    </nav>
+    
+    <!-- BODY -->
+    <div class="container-fulid" style="margin-top: 30px;">
+      <div class="row">
+        <div class="col-sm">
+          <div class="row">
+            <div class="col-2">
+              <!-- START OF LEFT MENU -->
+              <div class="nav flex-column " id="v-pills-tab" role="tablist" aria-orientation="vertical" ; style="border-radius: 10px; border: 1px solid #7F3F90;">
+                
+                <a class="nav-link active achv1" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" style="color: #7F3F90; ">ทั้งประเทศ</a>
+                <li>
+                <a class="nav-link dropdown-toggle achv1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" aria-selected="false" style="color: #7F3F90; ">ภาค</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">ภาค 1</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">ภาค 2</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">ภาค 3</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">ภาค 4</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="nav-link dropdown-toggle achv1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" aria-selected="false"style="color: #7F3F90; ">เขต</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟน.1</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟน.2</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟน.3</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟฉ.1</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟฉ.2</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟฉ.3</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟก.1</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟก.2</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟก.3</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟต.1</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟต.2</a>
+                    <a class="dropdown-item achv1" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: #7F3F90; ">กฟต.3</a>
+                  </div>
+                </li>
+              </div>
+              <!-- END OF LEFT MENU -->
+              
+            </div>
+            <div class="col-8">  
+            <!-- test 2nd NAV BAR-->
+              <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff; color: #7F3F90; border-radius: 10px; border: 1px solid #7F3F90;">
+                <!-- <a class="navbar-brand" href="#">ภาพรวม <span class="sr-only">(current)</span></a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle achv1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ช่วงเวลา
+                      </a>
+                      <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item achv1" href="#">ตั้งแต่เริ่มต้น</a>
+                        <a class="dropdown-item achv1" href="#">1 เดือนย้อนหลัง</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item achv1" href="#">ต้นปี จนถึง ปัจจุบัน</a>
+                      </div>
+                    </li>
+                    <li class="nav-item active achv1">
+                      <a class="nav-link" href="#">ภาพรวม <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item achv1">
+                      <a class="nav-link" href="#">รายปี <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item achv1">
+                      <a class="nav-link" href="#">รายเดือน<span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-6" type="search" placeholder="กรอกรหัส/ชื่อพัสดุเพื่อค้นหา" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ค้นหา</button>
+                  </form>
+                </div>
+              </nav>
+            <!-- END test 2nd NAV BAR-->
+
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="container-fluid">
+                  <div class="col">
+                    <!-- <h2 class="text-uppercase">1050010067 TR.,100 KVA, 3P,22-0.416/0.24 KV DYN 11,SC</h2> -->
+                  </div>
+                  <div class="col">
+                  1050010067 TR.,100 KVA, 3P,22-0.416/0.24 KV DYN 11,SC
+                      <h2 class="text-center" >ทั้งประเทศ</h2>
+                  </div>
+              </div>
+          
+          <!-- Am Chart Bar -->    
+          <!-- Styles -->
+          <div class="container">
+            <!-- Styles -->
+              <style>
+                #chartdiv {
+                  width: 100%;
+                  /* height: 800px; */
+                  height: 600px;
+                }
+              </style>
+                
+                <!-- Resources -->
+                <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+                <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+                <script src="https://cdn.amcharts.com/lib/4/themes/spiritedaway.js"></script>
+                <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+                
+                <!-- Chart code -->
+                <script>
+                am4core.ready(function() {
+                
+                // Themes begin
+                am4core.useTheme(am4themes_spiritedaway);
+                am4core.useTheme(am4themes_animated);
+                // Themes end
+                
+                // Create chart instance
+                var chart = am4core.create("chartdiv", am4charts.XYChart);
+                
+                // Add data
+                chart.data = [ 
+                  {
+                  "Pjname": "รวม (ทุกโครงการ)",
+                  "recieve": 1,
+                  "แผนจัดหาพัสดุ": 2000, //ต้องเป็นยอดเต็มแล้วลบค่าจำนวนของrecieve
+                  "เปิด PR แล้ว": 1000,
+                  "เปิด PO แล้ว": 8000,
+                  "พัสดุที่ใช้ไป": 6000,
+                  "แผนการใช้พัสดุ": 9000,
+                  "พัสดุคงคลัง": 1000
+                  
+                }, {
+                  "Pjname": "คพจ.2",
+                  "recieve": 1200,
+                  "แผนจัดหาพัสดุ": 1000,
+                  "เปิด PR แล้ว": 2200,
+                  "เปิด PO แล้ว": 1800,
+                  "พัสดุที่ใช้ไป": 300,
+                  "แผนการใช้พัสดุ": 2200,
+                  "พัสดุคงคลัง": 200
+                }, {
+                  "Pjname": "คพญ.2",
+                  "recieve": 250,
+                  "แผนจัดหาพัสดุ": 350,
+                  "เปิด PR แล้ว": 350,
+                  "เปิด PO แล้ว": 300,
+                  "พัสดุที่ใช้ไป": 200,
+                  "แผนการใช้พัสดุ": 350,
+                  "พัสดุคงคลัง": 50
+                }, {
+                  "Pjname": "คฟม.2",
+                  "recieve": 1200,
+                  "แผนจัดหาพัสดุ": 2200,
+                  "เปิด PR แล้ว": 2200,
+                  "เปิด PO แล้ว": 1800,
+                  "พัสดุที่ใช้ไป": 300,
+                  "แผนการใช้พัสดุ": 2200,
+                  "พัสดุคงคลัง": 200
+                }, {
+                  "Pjname": "คพจ.1",
+                  "recieve": 250,
+                  "แผนจัดหาพัสดุ": 350,
+                  "เปิด PR แล้ว": 350,
+                  "เปิด PO แล้ว": 300,
+                  "พัสดุที่ใช้ไป": 200,
+                  "แผนการใช้พัสดุ": 350,
+                  "พัสดุคงคลัง": 50
+                }, {
+                  "Pjname": "คพญ.1",
+                  "recieve": 1200,
+                  "แผนจัดหาพัสดุ": 2200,
+                  "เปิด PR แล้ว": 2200,
+                  "เปิด PO แล้ว": 1800,
+                  "พัสดุที่ใช้ไป": 300,
+                  "แผนการใช้พัสดุ": 2200,
+                  "พัสดุคงคลัง": 200
+                }, {
+                  "Pjname": "ผู้ใช้ไฟ",
+                  "recieve": 250,
+                  "แผนจัดหาพัสดุ": 350,
+                  "เปิด PR แล้ว": 350,
+                  "เปิด PO แล้ว": 300,
+                  "พัสดุที่ใช้ไป": 200,
+                  "แผนการใช้พัสดุ": 350,
+                  "พัสดุคงคลัง": 50
+                } ];
+                
+
+                var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis())
+                categoryAxis.dataFields.category = 'Pjname'
+                categoryAxis.renderer.inversed = true
+                categoryAxis.renderer.grid.template.location = 0
+                // categoryAxis.renderer.cellStartLocation = getCellStartLocation(_.size(data))
+                // categoryAxis.renderer.cellEndLocation = getCellEndLocation(_.size(data))
+                categoryAxis.renderer.minGridDistance = 10
+                categoryAxis.strictMinMax = true
+                categoryAxis.renderer.grid.template.disabled = true
+                categoryAxis.renderer.labels.template.background = new am4core.RoundedRectangle()
+                categoryAxis.renderer.labels.template.dx = -5
+                categoryAxis.renderer.labels.template.background.cornerRadius(
+                16,
+                16,
+                16,
+                16
+                )
+                categoryAxis.renderer.labels.template.textAlign = 'end'
+                categoryAxis.renderer.labels.template.padding(4, 16, 4, 16)
+                categoryAxis.renderer.labels.template.fontSize = 14
+
+                // categoryAxis.renderer.labels.template.background.adapter.add('fill',am4core.color('#FF6565'))
+
+                var valueAxis = chart.xAxes.push(new am4charts.ValueAxis())
+                //valueAxis.title.text = 'Local country offices'
+                valueAxis.title.fontWeight = 'bold'
+                valueAxis.title.fontSize = 16
+                valueAxis.title.marginTop = 15
+                valueAxis.title.marginBottom = 15
+                valueAxis.renderer.opposite = false
+                valueAxis.renderer.labels.template.fontSize = 16
+
+                // Create series
+                function createSeries(field, name, stacked, TTT) {
+                    var series = chart.series.push(new am4charts.ColumnSeries());
+                    series.dataFields.valueX = field;
+                    series.dataFields.categoryY = "Pjname";
+                    series.name = name;
+                    series.columns.template.tooltipText = TTT;
+                    series.stacked = stacked;
+                    series.columns.template.width = am4core.percent(90);
+                    series.sequencedInterpolation = true
+                    
+                    
+                    var valueLabel = series.bullets.push(new am4charts.LabelBullet())
+                    valueLabel.label.text = "{newValueX.formatNumber('#.a')}"
+                    valueLabel.label.fill = am4core.color('#7f3f90')
+                    valueLabel.label.hideOversized = false
+                    valueLabel.label.truncate = false
+                    valueLabel.label.fontSize = 12
+
+                    series.fill = '#7F3F90'
+                    valueLabel.label.horizontalCenter = 'left'
+                    valueLabel.label.dx = 9
+
+                    if(field === 'recieve'){
+                        series.fill = '#D3B3DB'
+                    }
+                    else if(field === 'เปิด PO แล้ว'){
+                        series.fill = '#64CFF1'
+                    }
+                    else if(field === 'เปิด PR แล้ว'){
+                        series.fill = '#464BB8'
+                    }
+                    else if(field === 'พัสดุที่ใช้ไป'){
+                        series.fill = '#66A062'
+                    }
+                    else if(field === 'แผนการใช้พัสดุ'){
+                        series.fill = '#454548'
+                    }
+                    else if(field === 'พัสดุคงคลัง'){
+                        series.fill = '#FFC428'
+                    }
+                    else if(field === 'ความต้องการพัสดุ'){
+                        series.fill = '#FFC428'
+                    }
+                }
+                
+                createSeries("recieve", "พัศดุที่ส่งมอบแล้ว", false, "{name}: [bold]{valueX}[/]");
+                createSeries("แผนจัดหาพัสดุ", "แผนจัดหาพัสดุ", true, "{name}คงเหลือ: [bold]{valueX}[/]");
+                createSeries("เปิด PO แล้ว", "เปิด PO แล้ว", false, "{name}: [bold]{valueX}[/]");
+                createSeries("เปิด PR แล้ว", "เปิด PR แล้ว", true, "{name}คงเหลือ: [bold]{valueX}[/]");
+                createSeries("พัสดุที่ใช้ไป", "พัสดุที่ใช้ไป", false, "{name}: [bold]{valueX}[/]");
+                createSeries("แผนการใช้พัสดุ", "แผนการใช้พัสดุ", true, "{name}คงเหลือ: [bold]{valueX}[/]");
+                createSeries("พัสดุคงคลัง", "พัสดุคงคลัง", false, "{name}: [bold]{valueX}[/]");
+                createSeries("ความต้องการพัสดุ", "ความต้องการพัสดุ", false, "{name}: [bold]{valueX}[/]");
+              
+                // Add legend
+                chart.legend = new am4charts.Legend();
+              
+                }); // end am4core.ready()
+                </script>
+    
+                <!-- HTML -->
+                <div id="chartdiv"></div>
+          </div>
+
+          </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">P...</div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">M...</div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">S...</div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    </div>
+       
+    </div>  
+   
+</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</body>
+
+
+
+
+</html>
