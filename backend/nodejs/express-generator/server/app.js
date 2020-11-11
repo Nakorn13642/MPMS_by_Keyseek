@@ -8,7 +8,7 @@ var keys = require('./config/keys');
 
 // mongoDB CONNECT
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/shoppper'); //('mongodb://localhost/shoppper')//(keys.mongoURI)
+mongoose.connect('keys.mongoURI'); //('mongodb://localhost/shoppper')//(keys.mongoURI) 
 mongoose.Promise = global.Promise;
 
 var app = express();
